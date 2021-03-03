@@ -23,3 +23,11 @@ button{
 label{
     font-size: 40rm;
 }
+footer{
+    text-align: center;
+    background-color: aliceblue;
+}
+.results{
+    border: 1px solid #008080;
+    border-radius: 10%;
+}
