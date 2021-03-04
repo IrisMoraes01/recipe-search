@@ -27,7 +27,15 @@ footer{
     text-align: center;
     background-color: aliceblue;
 }
-.results{
+.plate-info{
     border: 1px solid #008080;
     border-radius: 10%;
+    width: 30%;
+    height: 30%;
+    font-size: 30rm;
+    margin: 3%;
+    padding: 2%;
+}
+.name{
+    text-align: center;
 }

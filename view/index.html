@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>O que comer hoje?</title>
+    <title>What to eat today?</title>
+    <link rel="icon" type="imagem/png" href="icon.png"/>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/css.css">
     <script type="text/javascript" src="js/jquery.js"> </script>
@@ -13,23 +14,23 @@
 
 <body id="container">
     <div class="center">
-        <h1>O que comer hoje?</h1>
+        <h1>What to eat today?</h1>
         <div>
             <form action="" method="post">
                 <div>
-                    <label>Pesquise qual prato deseja encontrar a receita:</label>
+                    <label>Search which dish you want to find the recipe:</label>
                     <br>
                     <input type="text" id="search" name="search" class="search-bar">
-                    <button type="submit">Pesquisar</button>
+                    <button type="submit" class="search-button btn-success">Search</button>
                 </div>
             </form>
-            <h6>Resultados</h6>
-            <div class="results"> 
-            </div>
+            <section class="results">
+            </section>
         </div>
         <footer> Iris de Jesus Moraes &copy; 2021</footer>
     </div>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"> </script>
 </body>
 
 </html>
