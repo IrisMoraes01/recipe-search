@@ -32,12 +32,11 @@ function requestPlateInfo(url, name) {
             plate = data;
         })
         .catch(err => console.log(err));
+    container.innerHTML = null;
+    card = '';
 }
 
 // Função responsavel por montar o HTML exibido na pagina
-//<div class="plate-picture">
-//    <img src="${plate.sprites.front_default}" alt="Sprite of ${plate.name}">
-//  </div>
 function createCard() {
     plate.results.forEach(result => {
         card += `
@@ -55,7 +54,7 @@ function createCard() {
 function startApp(plateName) {
     requestPlateInfo(baseUrl, plateName);
     setTimeout(function (){
-        container.innerHTML += createCard();  
+        container.innerHTML += createCard();
     }, 2000);
 }
 
@@ -65,9 +64,4 @@ searchButton.addEventListener('click', event => {
     event.preventDefault();
     plateName = searchInput.value.toLowerCase();
     startApp(plateName);
-    container.classList.add('fade');
-    // Reseta o efeito fade removendo a classe fade
-    setTimeout(() => {
-        container.classList.remove('fade');
-    }, 3000);
 });
